@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Finder</title>
+</head>
+<body>
+    <h1>Please Enter Your <a href="https://en.wikipedia.org/wiki/List_of_observatory_codes">Nearest Observatory Code</a>
+        and Select Which Planet You Want to View:</h1>
+
+        <form action="/result" method = "POST">
+            <div class="form-group">
+                <input type="text" class="form-control" id="observatory" aria-describedby="localobservatory"
+                placeholder="502" name="location">
+            </div>
+        <label for="membership">Choose a planet:</label>
+        <select name="membership" id="membership">
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Mars" selected>Mars</option>
+            <option value="Jupiter">Jupiter</option>          
+            <option value="Saturn">Saturn</option>
+          <option value="Uranus">Uranus</option>
+          <option value="Neptune">Neptune</option>
+        </select>
+    </form>
+    
+</body>
+</html>
